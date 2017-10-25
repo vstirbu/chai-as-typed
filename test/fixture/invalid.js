@@ -2,4 +2,4 @@
 
 const test = require('./documented-module');
 
-test('123');
+test(123);
