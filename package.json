@@ -4,7 +4,9 @@
   "description": "Chai assertions for types defined via JSDoc",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test-cov": "istanbul cover _mocha -- -R spec --check-leaks",
+    "test-travis": "istanbul cover _mocha --report lcovonly -- --reporter dot"
   },
   "repository": {
     "type": "git",
