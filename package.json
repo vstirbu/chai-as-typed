@@ -14,6 +14,7 @@
   },
   "keywords": [
     "chai",
+    "chai-plugin",
     "typescript",
     "type",
     "jsdoc"
