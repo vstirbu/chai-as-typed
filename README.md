@@ -13,3 +13,27 @@ Now, if I have a JavaScript file augmented with the proper JSDoc comments, an ed
 ![](https://raw.github.com/vstirbu/chai-as-typed/master/media/fsm-events-typescript.gif)
 
 However, exposing reliably the type information about a module APIs requires testing. This plugin enhances Chai with specific helpers that make the task of checking the type information in plain JavaScript files easy.
+
+## How to use?
+
+Considering that we have a javascript file, which starts with the following line:
+
+```javascript
+// @ts-check
+```
+
+we can test that the types used are correct with the following assertion:
+
+```javascript
+expect('/absolute/path/to/filename.js').to.have.types.validated();
+```
+
+If there are type errors, an error will be thrown indicating the position of the type violations:
+
+```
+Error: /absolute/path/to/filename.js (Ln 5, Col 6): Argument of type '123' is not assignable to parameter of type 'string'
+```
+
+## Disclaimer
+
+The plugin is in experimental phase. Use it gently and provide feedback! :)
