@@ -14,7 +14,7 @@ Now, if I have a JavaScript file augmented with the proper JSDoc comments, an ed
 
 However, exposing reliably the type information about a module APIs requires testing. This plugin enhances Chai with specific helpers that make the task of checking the type information in plain JavaScript files easy.
 
-## How to use?
+## How to use
 
 Considering that we have a javascript file, which starts with the following line:
 
@@ -38,6 +38,17 @@ Also, in case errors are expected, we can test using the following assertions in
 
 ```javascript
 expect('/absolute/path/to/filename.js').to.have.types.errors(1);
+```
+
+## Installation ans setup
+
+Do `npm install --save-dev chai-as-typed`, then:
+
+```javascript
+var chai = require('chai');
+var chaiAsTyped = require('chai-as-typed');
+
+chai.use(chaiAsTyped);
 ```
 
 ## Disclaimer

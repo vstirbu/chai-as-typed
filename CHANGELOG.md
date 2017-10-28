@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1 / 2017-10-28
+
+* add usage and setup instructions
+
 ## 0.2.0 / 2017-10-28
 
 * added `errors` helper
