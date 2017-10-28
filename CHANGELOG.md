@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0 / 2017-10-28
+
+* added `errors` helper
+
 ## 0.1.0 / 2017-10-26
 
 * updated TypeScript target to ES2017

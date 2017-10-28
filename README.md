@@ -34,6 +34,12 @@ If there are type errors, an error will be thrown indicating the position of the
 Error: /absolute/path/to/filename.js (Ln 5, Col 6): Argument of type '123' is not assignable to parameter of type 'string'
 ```
 
+Also, in case errors are expected, we can test using the following assertions indicating the number of errors expected:
+
+```javascript
+expect('/absolute/path/to/filename.js').to.have.types.errors(1);
+```
+
 ## Disclaimer
 
 The plugin is in experimental phase. Use it gently and provide feedback! :)
