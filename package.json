@@ -31,7 +31,7 @@
     "mocha": "^5.0.0"
   },
   "dependencies": {
-    "@types/node": "^9.6.0",
+    "@types/node": "^9.6.4",
     "typescript": "^2.5.3"
   }
 }
